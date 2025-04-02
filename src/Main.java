@@ -17,6 +17,7 @@ public class Main {
             System.out.println("2. Visualizza inventario");
             System.out.println("0. Esci");
             scelta = s.nextInt();
+            s.nextLine();
             switch(scelta){
 
                 case 1:
@@ -24,8 +25,10 @@ public class Main {
                     String nome= s.nextLine();
                     System.out.println("inserisci prezzo: ");
                     double prezzo= s.nextInt();
+                    s.nextLine();
                     System.out.println("inserisci quantita: ");
                     int quantita = s.nextInt();
+                    s.nextLine();
                     System.out.println("congratulazioni hai aggiunto un prodottto");
                     product.add(new Prodotto(nome,prezzo, quantita));
                     break;
